@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資料探勘</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="static/css/me.css">
+    <link rel="icon" href="icon.png"/>
+
+</head>
+<body>
+
+    <!--導航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">資料探勘</h2>
+                <a href="index.html" class="m-item item m-mobile-hide"><i class="map icon"></i>地圖</a>
+                <div class="m-item item m-mobile-hide"><i class="idea icon"></i>論述</div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!--內容-->
+    <div class="m-container-small m-padded-tb-big">
+
+        <div class="ui container">
+
+<!--            頭部-->
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">
+                    <h2>台南旅遊景點</h2>
+                </div>
+            </div>
+
+<!--            內容-->
+            <div class="ui js-toc-content attached padded segment">
+
+                <h2 class="ui center aligned header">胖胖鴨鴨</h2>
+
+                <br>
+
+
+<!--            文章內容-->
+                <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
+
+                   <p>想要研究氣象與遊客人數的關係，所以我們從「政府資料開放平台」和「觀測資料查詢 CODiS」下載了遊客、景點、氣象觀測站的資料，
+                   要知道景點的氣象資料，就要透過氣象站，所以我們決定尋找離景點最近的氣象站，透過Python操作，計算出結果，
+                   就可以得出每個景點的氣象，取得並整理好資料就可以開始進行分析。</p>
+
+                </div>
+
+                <br>
+
+
+<!--                圖示-->
+                <div class="ui flowing payQR popup top left transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images">
+                            <div class="image">
+                                <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
+                            </div>
+                            <div class="image">
+                                <img src="" alt="" class="ui rounded bordered image" style="width: 120px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!--            資料來源-->
+            <div class="ui attached positive message">
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <h3>資料來源</h3>
+                        <ui class="list">
+                            <li>台南旅遊網</li>
+                            <li>政府資料開放平台</li>
+                            <li>觀測資料查詢 CODiS</li>
+                        </ui>
+                    </div>
+
+                    <div class="five wide column">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <!--footer-->
+    <footer class="ui inverted vertical segment">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $(' #payButton').popup({
+            popup : $('.payQR.popup'),
+            on : 'click',
+            position: 'bottom center'
+        });
+
+
+    </script>
+</body>
+</html>
