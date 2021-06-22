@@ -66,50 +66,73 @@
                 <button onclick="getTouristData(this.value)" title=大天后宮 id=大天后宮 value=大天后宮 class=tourist><i class="map marker alternate icon"></i></button>
                 <button onclick="getTouristData(this.value)" title=安平小鎮 id=安平小鎮 value=安平小鎮 class=tourist><i class="map marker alternate icon"></i></button>
             </div>
-<!--            內容-->
-
-            <div class="ui js-toc-content attached padded segment">
-
-                <p id="tips" class="ui center aligned header">點擊可以觀看旅遊景點的資訊</p>
-
-                <br>
-
-<!--            文章內容-->
-                <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
-                    <h2 id="t-title" class="ui center aligned header">臺灣鹽博物館</h2>
-
-                    <br>
-                    <br>
-
-                    <div>
-
-                        <p id="t-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鹽場內共有2座鹽山：主峰與北峰，主峰的鹽是鹽場停產後所留下之鹽，海拔高度20公尺，約6萬公噸；質地堅硬，表層有落塵覆蓋，已成為七股觀光地標。北峰是西澳洲的鹽，是粉碎鹽工廠的原料鹽，像極雪白的極地山頭。</p>
-
-                    </div>
-
-                </div>
-
-
-                <br>
-
-
-
-
-            </div>
 
 
             <div class="ui js-toc-content attached segment center aligned header">
                 <div class="ui horizontal link list">
                     <div class="ui images center">
                         <div class="image">
-                            <img id="temperature-img" src="static/images/tourist/temperature/臺灣鹽博物館.png" alt="" class="ui rounded bordered image" width="370px">
+                            <img id="temperature-img" src="static/images/tourist/temperature/臺灣鹽博物館.png" alt="" class="ui rounded bordered image min m-image">
                         </div>
                         <div class="image">
-                            <img id="tourist-img" src="static/images/tourist/tourist/臺灣鹽博物館.png" alt="" class="ui rounded bordered image" width="370px">
+                            <img id="tourist-img" src="static/images/tourist/tourist/臺灣鹽博物館.png" alt="" class="ui rounded bordered image min m-image">
+                        </div>
+                        <div class="image">
+                            <img id="rain-img" src="static/images/tourist/rain/臺灣鹽博物館.png" alt="" class="ui rounded bordered image min m-image">
                         </div>
                     </div>
                 </div>
             </div>
+
+<!--            內容-->
+
+            <div class="ui js-toc-content attached padded segment">
+
+<!--            文章內容-->
+                <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
+                    <h2 id="t-title" class="ui center aligned header">臺灣鹽博物館</h2>
+
+                    <br>
+
+                    <div>
+
+                        <p id="t-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一望無際的鹽田中，有兩座白色金字塔並肩聳立，與七股鹽山遙遙相望，這裡是台灣鹽博物館。用視覺回憶鹽田風光；用觸覺掌握鹽粒結晶；用味覺品嘗粗鹽鹹味；用感覺和認知完整體會一路走來的鹽業歷史。</p>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="data">
+                        <div>
+                            <p>緯度：</p>
+                            <p id="t-lat">23.15535</p>
+                        </div>
+                        <div>
+                            <p>經度：</p>
+                            <p id="t-lng">120.10565</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div id="t-type">
+                        <div class="ui basic teal label">
+                            地方展館
+                        </div>
+                        <div class="ui basic teal label">
+                            在地藝文
+                        </div>
+                        <div class="ui basic teal label">
+                            無障礙設施
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
 
 <!--            資料來源-->
             <div class="ui attached positive message">
@@ -158,10 +181,5 @@
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <script src="static/js/index.js"></script>
 
-    <script>
-        $('.menu.toggle').click(function () {
-            $('.m-item').toggleClass('m-mobile-hide');
-        });
-    </script>
 </body>
 </html>
